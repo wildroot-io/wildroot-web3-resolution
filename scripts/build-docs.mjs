@@ -38,17 +38,23 @@ export const CHAPTERS = [
 
 const read = (p) => readFileSync(join(ROOT, p), 'utf8')
 
+/** Rewrite chapter-relative paths so they resolve from the repository root. */
+function relink (text) {
+  return text
+    .replace(/\.\.\/\.\.\/namespaces\//g, 'namespaces/')
+    // Chapter files link to the consolidated files as ../../; here they are siblings.
+    .replace(/\.\.\/\.\.\/(DEVIATIONS|REFERENCES|SPEC)\.md/g, '$1.md')
+    .replace(/\.\.\/([a-z-]+)\/SPEC\.md/g, 'namespaces/$1/SPEC.md')
+}
+
 /** Drop the chapter file's own H1 and demote every other heading one level. */
 function body (text) {
-  return text
+  return relink(text
     .split('\n')
     .filter((line, i, all) => !(i === 0 && line.startsWith('# ')))
     .map((line) => (/^#{1,5} /.test(line) ? '#' + line : line))
     .join('\n')
-    .replace(/^\n+/, '')
-    // Chapter files link to the consolidated files as ../../; here they are siblings.
-    .replace(/\.\.\/\.\.\/(DEVIATIONS|REFERENCES|SPEC)\.md/g, '$1.md')
-    .replace(/\.\.\/([a-z-]+)\/SPEC\.md/g, 'namespaces/$1/SPEC.md')
+    .replace(/^\n+/, ''))
 }
 
 const anchor = (heading) => heading.toLowerCase().replace(/[`*_]/g, '').replace(/[^a-z0-9 -]/g, '').trim().replace(/\s+/g, '-')
@@ -119,7 +125,7 @@ export function buildReferences () {
     const text = read(file)
     for (const r of rows(text)) {
       const key = keyOf(r.id)
-      if (!index.has(key)) index.set(key, { id: r.id, title: r.title, chapters: [] })
+      if (!index.has(key)) index.set(key, { id: relink(r.id), title: r.title, chapters: [] })
       const entry = index.get(key)
       if (!entry.chapters.includes(label)) entry.chapters.push(label)
     }

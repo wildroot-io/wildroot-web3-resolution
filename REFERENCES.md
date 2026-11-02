@@ -16,17 +16,7 @@ another — and that column is the point of the file.
 | Identifier | Title | Cited in |
 |---|---|---|
 | `--ignore-certificate-errors-spki-list` | Chromium command-line switch (documented in Chromium's own source; there is no specification) | Chapter 2 |
-| [`../../DEVIATIONS.md`](../../DEVIATIONS.md) | Deviations and open questions | Chapter 8 |
-| `../../DEVIATIONS.md` D-1, D-9, D-10 | The spine's deviations | Chapter 4 |
-| [`../../namespaces/router/SPEC.md`](../router/SPEC.md) | The router chapter of this specification | Chapter 2 |
-| [`../../SPEC.md`](../../SPEC.md) | The integrated specification — the spine | Chapter 8 |
-| `../../SPEC.md` §3, §4 | The spine: namespace selection and trust states | Chapter 4 |
-| [`../../SPEC.md` §4.2](../../SPEC.md) | The Fast / Private switch | Chapter 1, Chapter 2, Chapter 8 |
-| `../../SPEC.md` §6 | The spine: the resolution algorithm | Chapter 4 |
-| `../../SPEC.md` §7 | The spine: HIP-5 `_op` on-chain resolution | Chapter 4 |
-| `../../SPEC.md` §10 | The spine: content pointers | Chapter 4 |
 | `../../src/delivery-mode.js` | The one switch — Settings › Content delivery › Mode | Chapter 6, Chapter 7, Chapter 9, Chapter 11 |
-| [`../apps/SPEC.md`](../apps/SPEC.md) §4 | Chapter 11 — Handshake applications and the `wss://` tunnel | Chapter 8 |
 | [@adraffy/ens-normalize](https://github.com/adraffy/ens-normalize.js) | ens-normalize.js | Chapter 5 |
 | [`@noble/curves`](https://github.com/paulmillr/noble-curves) | Audited elliptic-curve implementations | Chapter 6, Chapter 7 |
 | [ANS-104](https://github.com/ArweaveTeam/arweave-standards/blob/master/ans/ANS-104.md) | Bundled Data v2.0.0 (Arweave Standards) | Chapter 4 |
@@ -63,6 +53,8 @@ another — and that column is the point of the file.
 | [CSP Level 3](https://www.w3.org/TR/CSP3/) | Content Security Policy Level 3 | Chapter 6, Chapter 8 |
 | [DEP-0002](https://github.com/datprotocol/DEPs/blob/master/proposals/0002-hypercore.md) | Hypercore (Dat Enhancement Proposal, historical) | Chapter 9 |
 | [DEP-0005](https://github.com/datprotocol/DEPs/blob/master/proposals/0005-dns.md) | DNS (Dat Enhancement Proposal, historical) | Chapter 9 |
+| [`DEVIATIONS.md`](DEVIATIONS.md) | Deviations and open questions | Chapter 8 |
+| `DEVIATIONS.md` D-1, D-9, D-10 | The spine's deviations | Chapter 4 |
 | [did:jwk Method Specification](https://github.com/quartzjer/did-jwk/blob/main/spec.md) | did:jwk Method Specification | Chapter 7 |
 | [did:key Method Specification](https://w3c-ccg.github.io/did-method-key/) | did:key Method Specification, W3C Credentials Community Group draft | Chapter 7 |
 | [did:pkh Method Specification](https://github.com/w3c-ccg/did-pkh/blob/main/did-pkh-method-draft.md) | did:pkh Method Specification, W3C Credentials Community Group draft | Chapter 7 |
@@ -141,6 +133,8 @@ another — and that column is the point of the file.
 | [multiformats/multicodec](https://github.com/multiformats/multicodec) ([table](https://github.com/multiformats/multicodec/blob/master/table.csv)) | Multicodec | Chapter 3 |
 | [multiformats/multihash](https://github.com/multiformats/multihash) | Multihash | Chapter 3 |
 | [multiformats/unsigned-varint](https://github.com/multiformats/unsigned-varint) | Unsigned-varint | Chapter 3 |
+| [`namespaces/apps/SPEC.md`](namespaces/apps/SPEC.md) §4 | Chapter 11 — Handshake applications and the `wss://` tunnel | Chapter 8 |
+| [`namespaces/router/SPEC.md`](namespaces/router/SPEC.md) | The router chapter of this specification | Chapter 2 |
 | `net::GetHttpReasonPhrase()` | Chromium — `ElectronURLLoaderFactory::StartLoading` status handling | Chapter 9 |
 | [net.fetch](https://www.electronjs.org/docs/latest/api/net#netfetchinput-init) | Electron API — `net.fetch` | Chapter 8 |
 | [nginx `ngx_http_v2_module`](https://nginx.org/en/docs/http/ngx_http_v2_module.html) | nginx, HTTP/2 module — the `http2` directive and the `listen … http2` parameter | Chapter 11 |
@@ -272,12 +266,18 @@ another — and that column is the point of the file.
 | [Secure Contexts](https://www.w3.org/TR/secure-contexts/) | W3C, Secure Contexts | Chapter 11 |
 | [Service Workers](https://www.w3.org/TR/service-workers/) | W3C, Service Workers | Chapter 11 |
 | [session.setProxy](https://www.electronjs.org/docs/latest/api/session#sessetproxyconfig) | Electron API — session proxy configuration, `proxyBypassRules` | Chapter 8 |
+| [`SPEC.md`](SPEC.md) | The integrated specification — the spine | Chapter 8 |
+| `SPEC.md` §3, §4 | The spine: namespace selection and trust states | Chapter 4 |
+| [`SPEC.md` §4.2](SPEC.md) | The Fast / Private switch | Chapter 1, Chapter 2, Chapter 8 |
+| `SPEC.md` §6 | The spine: the resolution algorithm | Chapter 4 |
+| `SPEC.md` §7 | The spine: HIP-5 `_op` on-chain resolution | Chapter 4 |
+| `SPEC.md` §10 | The spine: content pointers | Chapter 4 |
 | [SSAC SAC113](https://itp.cdn.icann.org/en/files/security-and-stability-advisory-committee-ssac-reports/sac-113-en.pdf) | SSAC Advisory on Private-Use TLDs | Part II |
 | [ssb-uri-spec](https://github.com/ssb-ngi-pointer/ssb-uri-spec) | SSB URI Specification | Chapter 9 |
 | `STORAGE-PUBLISH-SHARE.md` decision **D-P2** (as amended) | The stated origin: what `car=` is for | Chapter 3 |
 | The bundled mainnet chain entry | `web3protocol/chains`, `chainId` 1 | Chapter 5 |
 | [The NIPs repository](https://github.com/nostr-protocol/nips) | Nostr Implementation Possibilities | Chapter 6 |
-| The spine: [`../../SPEC.md`](../../SPEC.md), [`../../DEVIATIONS.md`](../../DEVIATIONS.md), [`../../REFERENCES.md`](../../REFERENCES.md) | The integrated specification | Chapter 3 |
+| The spine: [`SPEC.md`](SPEC.md), [`DEVIATIONS.md`](DEVIATIONS.md), [`REFERENCES.md`](REFERENCES.md) | The integrated specification | Chapter 3 |
 | [Tor Browser design](https://2019.www.torproject.org/projects/torbrowser/design/) | The Design and Implementation of the Tor Browser | Chapter 8 |
 | [Tor Expert Bundle](https://www.torproject.org/download/tor/) | Tor Project download page — the expert bundle | Chapter 8 |
 | [Tor Rendezvous Specification v3](https://spec.torproject.org/rend-spec-v3) | Tor Rendezvous Specification — Version 3 | Part II |
@@ -636,7 +636,7 @@ the code that makes it.
 | `odoh-relay.numa.rs`, `odoh-relay.edgecompute.app` | The deployed public ODoH relays | §9.4 — the reason RFC 9230's non-collusion assumption does not hold at current scale: two public relays exist worldwide and one is run by a target operator. The code stays; the privacy claim does not. `src/config.js:376-408`. |
 | [DNSCrypt public ODoH server list](https://github.com/DNSCrypt/dnscrypt-resolvers) | DNSCrypt resolver lists | §5.3 — why the second relay is kept in the configuration although it does not currently carry our traffic: it allowlists targets, and will start working for `odoh.hns.one` once that target is on this list, so that day needs no release. `src/config.js:402-407`. |
 | [`SPEC.md` §4.2](SPEC.md) | The Fast / Private switch | §5.7, §9.4 — the one control whose policy table (`policyFor`) decides `icannDns`: `secure` in Private, the configured `dns.mode` in Fast; and the controller (`DeliveryMode`) whose `change` event re-applies the plan. `../../src/delivery-mode.js`, `../../tests/delivery-mode.test.js`. |
-| [`../../namespaces/router/SPEC.md`](namespaces/router/SPEC.md) | The router chapter of this specification | §2.1, §3 — laws **L1** (an explicit scheme selects the protocol, always) and **L2** (no silent cross-namespace fallback), which are what make "ICANN first" a *boundary* rather than a preference, and the `X-Resolution-Namespace` header that proves a failure stayed inside its namespace. `../../src/router.js`. |
+| [`namespaces/router/SPEC.md`](namespaces/router/SPEC.md) | The router chapter of this specification | §2.1, §3 — laws **L1** (an explicit scheme selects the protocol, always) and **L2** (no silent cross-namespace fallback), which are what make "ICANN first" a *boundary* rather than a preference, and the `X-Resolution-Namespace` header that proves a failure stayed inside its namespace. `../../src/router.js`. |
 
 
 ---
