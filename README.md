@@ -70,7 +70,7 @@ nothing was checked and exits with a nonzero status.
 ## Citing
 
 > Wildroot, *Web3 name resolution: a specification*, version 0.10.0.
-> https://github.com/keptlive/wildroot-web3-resolution
+> https://github.com/wildroot-io/wildroot-web3-resolution
 
 ## Licence
 
